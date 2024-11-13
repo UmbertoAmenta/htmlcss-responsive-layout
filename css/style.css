@@ -204,7 +204,40 @@ h3 + hr  {
 /*----------------
     FOOTER
 -----------------*/
+footer {
+    background-color: #7c69a4;
+    margin-top: 50px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
 
+footer .flex {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spa {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.policies ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.policies li {
+    list-style: none;
+}
+
+.policies li a {
+    color: white;
+}
 
 
 /*----------------
@@ -255,10 +288,6 @@ h3 + hr  {
         
     }
 
-
-
-    
-    
 }
 
 
@@ -291,8 +320,26 @@ h3 + hr  {
     .banner, .img-fluid, .vanish {
         width: 100%;
     }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .flex {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
     
-    
+    footer .spa {
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .spa h5 {
+        margin-bottom: 10px;
+    }
     
     
 }
