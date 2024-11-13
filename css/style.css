@@ -20,6 +20,10 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
+
+h4 {
+    font-size: 24px
+}
   
 
 
@@ -77,6 +81,10 @@ img.fluid {
     height: auto;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
+
 .flex {
     display: flex;
     flex-direction: column;
@@ -85,6 +93,8 @@ img.fluid {
 .vanish {
     display: none;
 }
+
+
 
 
 
@@ -139,7 +149,6 @@ body main {
 }
 
 .info h4 {
-    font-size: 24px;
     padding-bottom: 30px;
 }
 
@@ -161,6 +170,7 @@ padding-top: 10px;
     flex-direction: row;
     justify-content: space-between;
 }
+
 
 
 /*----------------
@@ -207,6 +217,11 @@ padding-top: 10px;
         width: 110px;
     }
 
+    .banner, .img-fluid, .vanish {
+        display: block;
+        /* width: 100%; */
+    }
+
     
     
 }
@@ -236,6 +251,10 @@ padding-top: 10px;
     
     .social .vanish {
         display: inline;
+    }
+
+    .banner, .img-fluid, .vanish {
+        width: 100%;
     }
     
     
