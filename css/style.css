@@ -21,8 +21,20 @@ h1 {
     font-style: normal;
 }
 
+h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
 h4 {
     font-size: 24px
+}
+
+.recipe {
+    line-height: 1.5em;
 }
   
 
@@ -31,6 +43,7 @@ h4 {
     BUTTON
 -----------------*/
 .btn {
+    background-color: white;
     padding: 2px 5px;
     border-radius: 40%;
     box-shadow: 4px 4px 0px lightgrey;
@@ -83,6 +96,12 @@ img.fluid {
 
 .img-fluid {
     max-width: 100%;
+}
+
+.img-small {
+    width: 60%;
+    margin: 30px auto;
+    display: block;
 }
 
 .flex {
@@ -171,6 +190,15 @@ padding-top: 10px;
     justify-content: space-between;
 }
 
+h3 + hr  {
+    width: 100px;
+    border: 1px solid #f7972e;
+}
+
+.article {
+    margin-top: 30px;
+}
+
 
 
 /*----------------
@@ -201,7 +229,6 @@ padding-top: 10px;
     .info .flex {
         flex-direction: row;
         flex-wrap: wrap;
-        /* align-items: center; */
     }
 
     .info .flex li {
@@ -219,8 +246,16 @@ padding-top: 10px;
 
     .banner, .img-fluid, .vanish {
         display: block;
-        /* width: 100%; */
     }
+
+    .img-small {
+        float: left;
+        width: 40%;
+        margin: 10px 15px 10px 0;
+        
+    }
+
+
 
     
     
