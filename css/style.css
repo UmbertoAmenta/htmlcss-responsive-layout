@@ -26,7 +26,39 @@ h1 {
 /*----------------
     BUTTON
 -----------------*/
+.btn {
+    padding: 2px 5px;
+    border-radius: 40%;
+    box-shadow: 4px 4px 0px lightgrey;
+    text-align: center;
+    border: none;
+    height: 40px;
+    width: 60px;
+}
 
+.btn .vanish {
+    display: none;
+}
+
+.fa-facebook {
+    color: #1a77f3;
+}
+
+.fa-twitter {
+    color: #009eff;
+}
+
+.fa-instagram {
+    color: #dd6585;
+}
+
+.fa-pinterest {
+    color: #e62222;
+}
+
+.fa-youtube {
+    color: #e62222;
+}
 
 
 /*----------------
@@ -49,6 +81,11 @@ img.fluid {
     display: flex;
     flex-direction: column;
 }
+
+.vanish {
+    display: none;
+}
+
 
 
 /*----------------
@@ -91,8 +128,9 @@ body main {
     font-weight: 900;
     color: #4e3969;
 }
-.vanish {
-    display: none;
+
+.preview {
+    box-shadow: 2px 2px 10px black;
 }
 
 .info {
@@ -105,12 +143,23 @@ body main {
     padding-bottom: 30px;
 }
 
-.info ul {
+.info ul,
+.social ul {
     list-style: none;
 }
 
 .info li:not(:first-child) {
 padding-top: 10px;
+}
+
+.social {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.social ul {
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -135,7 +184,7 @@ padding-top: 10px;
         padding-right: 40px;
     }
 
-    .vanish {
+    .recipe-label .vanish {
         display: inline;
     }
 
@@ -154,7 +203,12 @@ padding-top: 10px;
         flex-basis: calc(100% / 3);
     }
 
+    .btn {
+        width: 110px;
+    }
 
+    
+    
 }
 
 
@@ -165,21 +219,26 @@ padding-top: 10px;
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     .preview, .flex {
         flex-direction: row;
         width: 100%;
     }
-
+    
     .info .flex {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-
+    
     img, .fluid {
         width: 69%;
     }
-
-
-
+    
+    .social .vanish {
+        display: inline;
+    }
+    
+    
+    
+    
 }
