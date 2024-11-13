@@ -11,7 +11,16 @@
 /*----------------
     TYPOGRAFY
 -----------------*/
+* {
+    font-family: "Montserrat", 'Helvetica Neue', sans-serif    
+}
 
+h1 {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 
 
 /*----------------
@@ -29,7 +38,21 @@
 /*----------------
     HEADER
 -----------------*/
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 17;
+}
 
+header h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #ff9614;
+    text-shadow: 1px 1px 3px yellowgreen;
+    padding: 10px;
+}
 
 
 /*----------------
@@ -47,3 +70,17 @@
 /*----------------
     MEDIA QUERY
 -----------------*/
+/* Tablet, 768px --> */
+@media screen and (min-width: 768px) {
+    header h1 {
+        text-align: left;
+    }
+
+}
+
+
+/* Desktop, 992px --> */
+@media screen and (min-width: 992px) {
+
+
+}
