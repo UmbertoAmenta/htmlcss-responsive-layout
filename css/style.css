@@ -32,7 +32,23 @@ h1 {
 /*----------------
     LAYOUT
 -----------------*/
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+img.fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*----------------
@@ -47,7 +63,7 @@ header {
 }
 
 header h1 {
-    font-size: 35px;
+    font-size: 50px;
     text-align: center;
     color: #ff9614;
     text-shadow: 1px 1px 3px yellowgreen;
@@ -58,7 +74,44 @@ header h1 {
 /*----------------
     MAIN
 -----------------*/
+body main {
+    background-color: #f6f5f3;
+}
 
+.recipe-label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.recipe-label > span {
+    color: #9f9a99;
+}
+
+.recipe-label > h2 {
+    font-weight: 900;
+    color: #4e3969;
+}
+.vanish {
+    display: none;
+}
+
+.info {
+    background-color: white;
+    padding: 30px;
+}
+
+.info h4 {
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info li:not(:first-child) {
+padding-top: 10px;
+}
 
 
 /*----------------
@@ -75,12 +128,58 @@ header h1 {
     header h1 {
         text-align: left;
     }
+    
+    .container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .vanish {
+        display: inline;
+    }
+
+    .info .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+
+    .info .flex li {
+        padding: 5px;
+        margin: 15px 0;
+    }
+    
+    .info .flex li:not(:last-child) {
+        flex-basis: calc(100% / 3);
+    }
+
 
 }
 
 
 /* Desktop, 992px --> */
 @media screen and (min-width: 992px) {
+    .container {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .preview, .flex {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .info .flex {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    img, .fluid {
+        width: 69%;
+    }
+
 
 
 }
